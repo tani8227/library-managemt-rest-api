@@ -4,6 +4,7 @@ import Customer from "../models/customer.js";
 export const signUp = async(req, res) => {
     try {
         const customer = await Customer.create(req.body);
+        console.log("customer");
         if (customer) {
             console.log(customer);
                return res.status(200).json(

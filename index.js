@@ -2,7 +2,7 @@ import express from 'express';
 import dotenv from "dotenv";
 import DB from './config/db.js';
 import routes from './routes/index.js';
-import bodyParser from 'body-parser';
+
 
 DB();
 dotenv.config();

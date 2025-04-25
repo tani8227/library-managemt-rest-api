@@ -4,6 +4,8 @@ import Customer from "../models/customer.js";
 import dotenv from "dotenv";
 dotenv.config();
 
+console.log("JWT_SECRET:", process.env.JWT_SECRET);
+
 const Auth = async (req, res, next) => {
   const authHeader = req.headers.authorization;
 
